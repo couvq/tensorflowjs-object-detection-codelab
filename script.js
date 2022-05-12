@@ -71,7 +71,7 @@ function predictWebcam() {
         for (let i = 0; i < children.length; i++) {
             liveView.removeChild(children[i]);
         }
-        children.splice(0);
+        children.splice(0); // remove all children efficiently from children array
 
         // Now lets loop through predictions and draw them to the live view if
         // they have a high confidence score.
